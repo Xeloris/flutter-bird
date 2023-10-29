@@ -26,11 +26,38 @@ class _HomePageState extends State<HomePage> {
 
   bool gameStarted = false;
 
-  static List<double> barrierX = [0.5, 0.5 + 1.5];
+  static List<double> barrierX = [
+    0.5,
+    0.5 + 0.2,
+    0.5 + 0.4,
+    0.5 + 0.6,
+    0.5 + 0.8,
+    0.5 + 1,
+    0.5 + 1.2,
+    0.5 + 1.4,
+    0.5 + 1.6,
+    0.5 + 1.8,
+    0.5 + 2,
+    0.5 + 2.2,
+    0.5 + 2.4,
+    0.5 + 2.6
+  ];
   static double barrierWidth = 0.1;
   List<List<double>> barrierHeight = [
+    [0.8, 0.4],
+    [0.4, 0.8],
+    [0.8, 0.2],
     [0.6, 0.4],
-    [0.4, 0.6],
+    [0.6, 1],
+    [0.8, 0.2],
+    [0.8, 0.4],
+    [0.4, 0.8],
+    [0.8, 0.2],
+    [0.6, 0.4],
+    [0.6, 1],
+    [0.8, 0.2],
+    [0.8, 0.4],
+    [0.4, 0.8],
   ];
 
   //Fonction jump
@@ -95,7 +122,22 @@ class _HomePageState extends State<HomePage> {
       gameStarted = false;
       time = 0;
       initialPos = birdY;
-      barrierX = [0.5, 0.5 + 1.5];
+      barrierX = [
+        0.5,
+        0.5 + 0.2,
+        0.5 + 0.4,
+        0.5 + 0.6,
+        0.5 + 0.8,
+        0.5 + 1,
+        0.5 + 1.2,
+        0.5 + 1.4,
+        0.5 + 1.6,
+        0.5 + 1.8,
+        0.5 + 2,
+        0.5 + 2.2,
+        0.5 + 2.4,
+        0.5 + 2.6
+      ];
     });
   }
 
@@ -182,6 +224,150 @@ class _HomePageState extends State<HomePage> {
                         barrierX: barrierX[1],
                         barrierWidth: barrierWidth,
                         barrierHeight: barrierHeight[1][1],
+                        isThisBottomBarrier: true,
+                      ),
+                      MyBarrier(
+                        barrierX: barrierX[2],
+                        barrierWidth: barrierWidth,
+                        barrierHeight: barrierHeight[2][0],
+                        isThisBottomBarrier: false,
+                      ),
+                      MyBarrier(
+                        barrierX: barrierX[2],
+                        barrierWidth: barrierWidth,
+                        barrierHeight: barrierHeight[2][1],
+                        isThisBottomBarrier: true,
+                      ),
+                      MyBarrier(
+                        barrierX: barrierX[3],
+                        barrierWidth: barrierWidth,
+                        barrierHeight: barrierHeight[3][0],
+                        isThisBottomBarrier: false,
+                      ),
+                      MyBarrier(
+                        barrierX: barrierX[3],
+                        barrierWidth: barrierWidth,
+                        barrierHeight: barrierHeight[3][1],
+                        isThisBottomBarrier: true,
+                      ),
+                      MyBarrier(
+                        barrierX: barrierX[4],
+                        barrierWidth: barrierWidth,
+                        barrierHeight: barrierHeight[4][0],
+                        isThisBottomBarrier: false,
+                      ),
+                      MyBarrier(
+                        barrierX: barrierX[4],
+                        barrierWidth: barrierWidth,
+                        barrierHeight: barrierHeight[4][1],
+                        isThisBottomBarrier: true,
+                      ),
+                      MyBarrier(
+                        barrierX: barrierX[5],
+                        barrierWidth: barrierWidth,
+                        barrierHeight: barrierHeight[5][0],
+                        isThisBottomBarrier: false,
+                      ),
+                      MyBarrier(
+                        barrierX: barrierX[5],
+                        barrierWidth: barrierWidth,
+                        barrierHeight: barrierHeight[5][1],
+                        isThisBottomBarrier: true,
+                      ),
+                      MyBarrier(
+                        barrierX: barrierX[6],
+                        barrierWidth: barrierWidth,
+                        barrierHeight: barrierHeight[6][0],
+                        isThisBottomBarrier: false,
+                      ),
+                      MyBarrier(
+                        barrierX: barrierX[6],
+                        barrierWidth: barrierWidth,
+                        barrierHeight: barrierHeight[6][1],
+                        isThisBottomBarrier: true,
+                      ),
+                      MyBarrier(
+                        barrierX: barrierX[7],
+                        barrierWidth: barrierWidth,
+                        barrierHeight: barrierHeight[7][0],
+                        isThisBottomBarrier: false,
+                      ),
+                      MyBarrier(
+                        barrierX: barrierX[7],
+                        barrierWidth: barrierWidth,
+                        barrierHeight: barrierHeight[7][1],
+                        isThisBottomBarrier: true,
+                      ),
+                      MyBarrier(
+                        barrierX: barrierX[8],
+                        barrierWidth: barrierWidth,
+                        barrierHeight: barrierHeight[8][0],
+                        isThisBottomBarrier: false,
+                      ),
+                      MyBarrier(
+                        barrierX: barrierX[8],
+                        barrierWidth: barrierWidth,
+                        barrierHeight: barrierHeight[8][1],
+                        isThisBottomBarrier: true,
+                      ),
+                      MyBarrier(
+                        barrierX: barrierX[9],
+                        barrierWidth: barrierWidth,
+                        barrierHeight: barrierHeight[9][0],
+                        isThisBottomBarrier: false,
+                      ),
+                      MyBarrier(
+                        barrierX: barrierX[9],
+                        barrierWidth: barrierWidth,
+                        barrierHeight: barrierHeight[9][1],
+                        isThisBottomBarrier: true,
+                      ),
+                      MyBarrier(
+                        barrierX: barrierX[10],
+                        barrierWidth: barrierWidth,
+                        barrierHeight: barrierHeight[10][0],
+                        isThisBottomBarrier: false,
+                      ),
+                      MyBarrier(
+                        barrierX: barrierX[10],
+                        barrierWidth: barrierWidth,
+                        barrierHeight: barrierHeight[10][1],
+                        isThisBottomBarrier: true,
+                      ),
+                      MyBarrier(
+                        barrierX: barrierX[11],
+                        barrierWidth: barrierWidth,
+                        barrierHeight: barrierHeight[11][0],
+                        isThisBottomBarrier: false,
+                      ),
+                      MyBarrier(
+                        barrierX: barrierX[11],
+                        barrierWidth: barrierWidth,
+                        barrierHeight: barrierHeight[11][1],
+                        isThisBottomBarrier: true,
+                      ),
+                      MyBarrier(
+                        barrierX: barrierX[12],
+                        barrierWidth: barrierWidth,
+                        barrierHeight: barrierHeight[12][0],
+                        isThisBottomBarrier: false,
+                      ),
+                      MyBarrier(
+                        barrierX: barrierX[12],
+                        barrierWidth: barrierWidth,
+                        barrierHeight: barrierHeight[12][1],
+                        isThisBottomBarrier: true,
+                      ),
+                      MyBarrier(
+                        barrierX: barrierX[13],
+                        barrierWidth: barrierWidth,
+                        barrierHeight: barrierHeight[13][0],
+                        isThisBottomBarrier: false,
+                      ),
+                      MyBarrier(
+                        barrierX: barrierX[13],
+                        barrierWidth: barrierWidth,
+                        barrierHeight: barrierHeight[13][1],
                         isThisBottomBarrier: true,
                       ),
                     ],
